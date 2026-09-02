@@ -11,7 +11,7 @@ COLS = 96
 CHAR_ASPECT = 0.5          # width / height of one monospace cell
 RAMP = " .,-:;=+*#%@"      # light pixel -> dense glyph (bright-on-dark), background -> space
 BG_TOLERANCE = 28          # flood-fill tolerance for the studio backdrop
-GAMMA = 1.7                # >1 pushes midtones darker so skin detail survives
+GAMMA = 1.35               # >1 pushes midtones darker so skin detail survives
 FONT_SIZE = 9
 LINE_HEIGHT = 9
 CHAR_WIDTH = FONT_SIZE * 0.6
@@ -105,7 +105,7 @@ def main() -> None:
     src, out = Path(sys.argv[1]), Path(sys.argv[2])
     if not src.is_file():
         raise SystemExit(f"photo not found: {src}")
-    rows = to_rows(load_gray(src, crop_box=(0.08, 0.02, 0.92, 0.72)))
+    rows = to_rows(load_gray(src, crop_box=(0.06, 0.03, 0.96, 0.66)))
     out.write_text(render_svg(rows))
     print("\n".join(rows))
     print(f"\nwrote {out} ({len(rows)} rows x {COLS} cols)", file=sys.stderr)

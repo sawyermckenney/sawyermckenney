@@ -46,6 +46,8 @@ TAGLINES = (
     ("out", "Full-stack  ·  Native iOS  ·  Cloud Infrastructure  ·  Applied ML"),
     ("cmd", "echo $LOCATION"),
     ("out", "Boulder, CO"),
+    ("cmd", "./deploy.sh 2> /dev/null"),
+    ("out", "✓ deployed  ·  errors redirected, as is tradition"),
 )
 
 

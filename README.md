@@ -8,8 +8,8 @@
 
 <table>
 <tr>
-<td valign="top"><img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg?v=3" width="310" alt="Sawyer McKenney — ASCII portrait" /></td>
-<td valign="top"><img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/wordmark.svg?v=3" width="542" alt="SAWYER MCKENNEY — 3D ASCII wordmark" /></td>
+<td valign="top"><img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg?v=4" width="325" alt="Sawyer McKenney — ASCII portrait" /></td>
+<td valign="top"><img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/wordmark.svg?v=4" width="527" alt="SAWYER MCKENNEY — 3D ASCII wordmark" /></td>
 </tr>
 </table>
 

@@ -6,13 +6,13 @@
   \__ \/ __ `/ | /| / / / / / _ \/ ___/
  ___/ / /_/ /| |/ |/ / /_/ /  __/ /    
 /____/\__,_/ |__/|__/\__, /\___/_/     
-                    /____/             
+                    /____/
     __  ___     __ __                           
    /  |/  /____/ //_/__  ____  ____  ___  __  __
   / /|_/ / ___/ ,< / _ \/ __ \/ __ \/ _ \/ / / /
  / /  / / /__/ /| /  __/ / / / / / /  __/ /_/ / 
 /_/  /_/\___/_/ |_\___/_/ /_/_/ /_/\___/\__, /  
-                                       /____/   
+                                       /____/
 ```
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=M.S.+Computer+Science+%40+CU+Boulder;Software+Engineer+Intern+%40+Frontier+Airlines;Full-stack+%2B+native+iOS+%2B+ML+for+airline+ops;Co-founder+%40+ASPENOVA" alt="Typing SVG" /></a>
@@ -104,8 +104,8 @@ interests:  [airline ops, native iOS, cloud infra, applied ML]
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=sawyermckenney&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&include_all_commits=true&count_private=true" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sawyermckenney&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&langs_count=8&hide=handlebars,html,css" alt="Top languages" />
+<img height="165" src="https://github-readme-stats.hackclub.dev/api?username=sawyermckenney&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&include_all_commits=true&count_private=true" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.hackclub.dev/api/top-langs/?username=sawyermckenney&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&langs_count=8&hide=handlebars,html,css" alt="Top languages" />
 
 <br/>
 

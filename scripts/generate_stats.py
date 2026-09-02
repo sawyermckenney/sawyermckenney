@@ -36,11 +36,18 @@ def fetch(path: str) -> Any:
         raise SystemExit(f"GitHub API error {err.code} for {path}: {err.read().decode()[:200]}") from err
 
 
+def repos_endpoint(page: int) -> str:
+    """Use the authenticated endpoint (includes private repos) when a personal token is supplied."""
+    if os.environ.get("GH_INCLUDE_PRIVATE") == "1":
+        return f"/user/repos?per_page=100&affiliation=owner&page={page}"
+    return f"/users/{USER}/repos?per_page=100&type=owner&page={page}"
+
+
 def fetch_all_repos() -> list[dict[str, Any]]:
     repos: list[dict[str, Any]] = []
     page = 1
     while True:
-        batch = fetch(f"/users/{USER}/repos?per_page=100&type=owner&page={page}")
+        batch = fetch(repos_endpoint(page))
         if not batch:
             return repos
         repos = [*repos, *batch]
@@ -52,10 +59,11 @@ def collect_stats(repos: list[dict[str, Any]]) -> dict[str, int]:
     user = fetch(f"/users/{USER}")
     commits = fetch(f"/search/commits?q=author:{USER}&per_page=1")["total_count"]
     prs = fetch(f"/search/issues?q=author:{USER}+type:pr&per_page=1")["total_count"]
+    repo_label = "Repositories" if os.environ.get("GH_INCLUDE_PRIVATE") == "1" else "Public repos"
     return {
         "Total commits": commits,
         "Pull requests": prs,
-        "Public repos": len(own),
+        repo_label: len(own),
         "Stars earned": sum(r["stargazers_count"] for r in own),
         "Followers": user["followers"],
     }

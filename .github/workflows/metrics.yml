@@ -23,7 +23,9 @@ jobs:
 
       - name: Render stats and language cards
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: add a METRICS_TOKEN repo secret (classic PAT, scope: repo) to count private repos too.
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_INCLUDE_PRIVATE: ${{ secrets.METRICS_TOKEN != '' && '1' || '0' }}
           GH_USER: ${{ github.repository_owner }}
           OUT_DIR: dist
         run: python scripts/generate_stats.py

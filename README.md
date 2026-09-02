@@ -34,12 +34,12 @@ sawyer@boulder:~$ whoami
 ```yaml
 name:       Sawyer McKenney
 location:   Boulder, CO
-education:  Computer Science, University of Colorado Boulder   # B.A. + M.S. (Cloud Infrastructure & Software Development)
+education:  Computer Science, University of Colorado Boulder   # B.A. + M.S.
 focus:
-  - Full-stack web applications      # TypeScript, Next.js, tRPC, Supabase, Stripe
-  - Native iOS                       # Swift, SwiftUI, ActivityKit, Liquid Glass
-  - Cloud infrastructure             # Docker, Kubernetes, AWS EKS, Azure, CI/CD
-  - Applied machine learning         # scikit-learn, pandas, predictive modeling
+  - Full-stack web apps        # TypeScript, Next.js, tRPC, Supabase, Stripe
+  - Native iOS                 # Swift, SwiftUI, ActivityKit
+  - Cloud infrastructure       # Docker, Kubernetes, AWS EKS, Azure
+  - Applied machine learning   # scikit-learn, pandas, predictive modeling
 domains:    [airline operations, marketplaces, e-commerce]
 ```
 

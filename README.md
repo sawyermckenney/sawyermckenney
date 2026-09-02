@@ -15,14 +15,13 @@
                                        /____/
 ```
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=M.S.+Computer+Science+%40+CU+Boulder;Software+Engineer+Intern+%40+Frontier+Airlines;Full-stack+%2B+native+iOS+%2B+ML+for+airline+ops;Co-founder+%40+ASPENOVA" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Full-stack+%C2%B7+Native+iOS+%C2%B7+Cloud+%C2%B7+Applied+ML;Computer+Science+%40+CU+Boulder" alt="Typing SVG" /></a>
 
 <br/>
 
 [![Website](https://img.shields.io/badge/sawyermck.com-0A0A0A?style=for-the-badge&logo=safari&logoColor=white)](https://sawyermck.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sawyer-mckenney)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SawyerMcKenney@gmail.com)
-[![Semoh](https://img.shields.io/badge/Semoh-asemoh.com-22C55E?style=for-the-badge)](https://asemoh.com)
 
 </div>
 
@@ -33,16 +32,15 @@ sawyer@boulder:~$ whoami
 ```
 
 ```yaml
-name:      Sawyer McKenney
-location:  Boulder, CO
-education:
-  - M.S. Computer Science, CU Boulder            # Cloud Infrastructure & Software Development · expected 05/2027
-  - B.A. Computer Science, CU Boulder            # Minor: Business Data Analytics · 05/2026
-currently:
-  - Software Engineer Intern @ Frontier Airlines # SwiftUI Live Activities, identity/visa-check SDK in iOS + Android
-  - Building Semoh, a student subleasing marketplace
-  - Co-founding ASPENOVA, a DTC apparel brand with a Liquid Glass iOS app
-interests:  [airline ops, native iOS, cloud infra, applied ML]
+name:       Sawyer McKenney
+location:   Boulder, CO
+education:  Computer Science, University of Colorado Boulder   # B.A. + M.S. (Cloud Infrastructure & Software Development)
+focus:
+  - Full-stack web applications      # TypeScript, Next.js, tRPC, Supabase, Stripe
+  - Native iOS                       # Swift, SwiftUI, ActivityKit, Liquid Glass
+  - Cloud infrastructure             # Docker, Kubernetes, AWS EKS, Azure, CI/CD
+  - Applied machine learning         # scikit-learn, pandas, predictive modeling
+domains:    [airline operations, marketplaces, e-commerce]
 ```
 
 ## 🛠️ Tech Stack
@@ -105,11 +103,8 @@ interests:  [airline ops, native iOS, cloud infra, applied ML]
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/metrics/github-metrics.svg" alt="GitHub metrics" width="100%" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=sawyermckenney&theme=github-dark-blue&hide_border=true&background=0D1117" alt="GitHub streak" />
+<img height="200" src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/metrics/stats.svg" alt="GitHub stats" />
+<img height="200" src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/metrics/langs.svg" alt="Most used languages" />
 
 <br/><br/>
 
@@ -126,7 +121,7 @@ interests:  [airline ops, native iOS, cloud infra, applied ML]
 <div align="center">
 
 ```text
-sawyer@boulder:~$ echo "Open to Software Engineer roles starting 2027 · let's build something"
+sawyer@boulder:~$ echo "Always building. Let's connect."
 ```
 
 <img src="https://komarev.com/ghpvc/?username=sawyermckenney&style=flat-square&color=58A6FF" alt="Profile views" />

@@ -1,21 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg" alt="ASCII portrait of Sawyer McKenney" width="560" />
-
-```text
-   _____                               
-  / ___/____ __      ____  _____  _____
-  \__ \/ __ `/ | /| / / / / / _ \/ ___/
- ___/ / /_/ /| |/ |/ / /_/ /  __/ /    
-/____/\__,_/ |__/|__/\__, /\___/_/     
-                    /____/
-    __  ___     __ __                           
-   /  |/  /____/ //_/__  ____  ____  ___  __  __
-  / /|_/ / ___/ ,< / _ \/ __ \/ __ \/ _ \/ / / /
- / /  / / /__/ /| /  __/ / / / / / /  __/ /_/ / 
-/_/  /_/\___/_/ |_\___/_/ /_/_/ /_/\___/\__, /  
-                                       /____/
-```
+<img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg" alt="ASCII portrait of Sawyer McKenney" width="100%" />
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Full-stack+%C2%B7+Native+iOS+%C2%B7+Cloud+%C2%B7+Applied+ML;Computer+Science+%40+CU+Boulder" alt="Typing SVG" /></a>
 

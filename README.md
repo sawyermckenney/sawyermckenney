@@ -93,9 +93,9 @@ domains:    [airline operations, marketplaces, e-commerce]
 | Project | What it is | Stack |
 |---|---|---|
 | **[Semoh](https://asemoh.com)** | Student subleasing marketplace with Stripe Connect payments and a companion SwiftUI iOS app on the same tRPC API (77 tests) | Next.js · tRPC · Supabase · Drizzle · Stripe · SwiftUI |
-| **F9 Flight Delay Predictor** | Same-day delay prediction + recovery planning for Frontier's network from BTS, ASOS weather, and FAA data. Calibrated gradient-boosted model, ~0.79 AUC backtested, with live OpenSky aircraft tracking propagated through rotations | Python · scikit-learn · pandas · Streamlit |
+| **[F9 Flight Delay Predictor](https://github.com/sawyermckenney/f9-delay-predictor)** | Same-day delay prediction + recovery planning for Frontier's network from BTS, ASOS weather, and FAA data. Calibrated gradient-boosted model, ~0.79 AUC backtested, with live OpenSky aircraft tracking propagated through rotations | Python · scikit-learn · pandas · Streamlit |
 | **[Flight Delay Cascade Analysis](https://github.com/sawyermckenney/flight-delay-cascade-analysis)** | How delays accumulate and propagate through airport networks using PageRank, feature engineering, and pattern mining | Python · Jupyter · NetworkX |
-| **ASPENOVA** | DTC apparel brand: React storefront on the Shopify Storefront API and a native iOS 26 Liquid Glass app with Supabase auth | React · SwiftUI · Shopify · Supabase |
+| **[ASPENOVA](https://aspenovaclub.com)** | DTC apparel brand: React storefront on the Shopify Storefront API and a native iOS 26 Liquid Glass app with Supabase auth | React · SwiftUI · Shopify · Supabase |
 | **[ML OOP Patterns](https://github.com/sawyermckenney/ml-oop-patterns)** | Comparative analysis of object-oriented design patterns across PyTorch, JAX, and Equinox | Python · PyTorch · JAX |
 | **Cloud Deployment (EKS)** | Containerized full-stack app deployed to an AWS EKS cluster with Kubernetes deployments, services, and load balancing | Docker · Kubernetes · AWS |
 

@@ -8,28 +8,33 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import numpy as np
 from PIL import Image, ImageDraw, ImageOps
 
 from terminal_svg import CHAR_ASPECT, FONT_SIZE, LINE_HEIGHT, PAD, TerminalFrame, escape
 
-COLS = 80
-RAMP = " .,-:;=+*#%@"      # light pixel -> dense glyph (bright-on-dark), backdrop -> space
+COLS = 104
+# 70-level ramp, sparse -> dense, so tone changes smoothly instead of banding
+RAMP = " .'`^\",:;Il!i><~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
 BG_TOLERANCE = 28          # flood-fill tolerance for the studio backdrop
-GAMMA = 1.35               # >1 pushes midtones darker so skin detail survives
-CROP_BOX = (0.10, 0.03, 0.92, 0.58)   # fractional (left, top, right, bottom) of the photo
-ROW_TYPE_S = 0.10          # seconds to type one row
+BACKDROP_GRAY = 5          # backdrop becomes faint texture (0 would leave it empty)
+SENTINEL = (255, 0, 255)   # flood-fill colour that cannot occur in a real photo
+GAMMA = 1.05               # near-linear tone, like a halftone print
+CROP_BOX = (0.16, 0.02, 0.86, 0.50)   # fractional (left, top, right, bottom): head and collar
+ROW_TYPE_S = 0.07          # seconds to type one row
 ROW_GAP_S = 0.0            # extra pause between rows
 FG, FG_BRIGHT, CURSOR = "#C9D1D9", "#F0F6FC", "#58A6FF"
 TITLE = "sawyer@github: ~$ ./portrait.sh"
 
 
-def remove_backdrop(rgb: Image.Image) -> Image.Image:
-    """Flood-fill the uniform studio backdrop from the corners to black so it maps to spaces."""
+def backdrop_mask(rgb: Image.Image) -> np.ndarray:
+    """Flood-fill the uniform studio backdrop from the corners; return a boolean mask of it."""
     work = rgb.copy()
     w, h = work.size
     for corner in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1), (w // 2, 0)):
-        ImageDraw.floodfill(work, corner, (0, 0, 0), thresh=BG_TOLERANCE)
-    return work
+        ImageDraw.floodfill(work, corner, SENTINEL, thresh=BG_TOLERANCE)
+    arr = np.asarray(work)
+    return (arr == np.array(SENTINEL)).all(axis=2)
 
 
 def load_gray(path: Path) -> Image.Image:
@@ -38,8 +43,13 @@ def load_gray(path: Path) -> Image.Image:
     l, t, r, b = CROP_BOX
     small = img.crop((int(w * l), int(h * t), int(w * r), int(h * b)))
     small.thumbnail((600, 600))            # flood fill is O(pixels); work at preview size
-    gray = ImageOps.autocontrast(remove_backdrop(small).convert("L"), cutoff=1, ignore=0)
-    return gray.point(lambda v: round(255 * (v / 255) ** GAMMA))
+    mask = backdrop_mask(small)
+    gray = np.asarray(small.convert("L")).astype(float)
+    subject = gray[~mask]
+    lo, hi = np.percentile(subject, 1), np.percentile(subject, 99)
+    gray = np.clip((gray - lo) / max(hi - lo, 1), 0, 1) ** GAMMA * 255
+    gray[mask] = BACKDROP_GRAY
+    return Image.fromarray(gray.astype(np.uint8))
 
 
 def to_rows(img: Image.Image) -> list[str]:
@@ -52,7 +62,7 @@ def to_rows(img: Image.Image) -> list[str]:
 
 def row_fill(row: str) -> str:
     """Rows dense in bright glyphs get the brighter fill so highlights pop."""
-    return FG_BRIGHT if sum(ch in "#%@" for ch in row) > COLS * 0.18 else FG
+    return FG_BRIGHT if sum(ch in "#MW&8%B@$" for ch in row) > COLS * 0.18 else FG
 
 
 def render_svg(rows: list[str]) -> str:

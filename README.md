@@ -1,6 +1,17 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg?v=2" alt="ASCII portrait of Sawyer McKenney" width="100%" />
+<!-- hero: ASCII portrait (types in row by row) beside a 3D-extruded ASCII wordmark
+     (wipes in, then rocks on its vertical axis). Widths are chosen so both panels land
+     at the same height. Regenerate:
+       python3 scripts/ascii_portrait.py <photo> assets/portrait.svg
+       python3 scripts/make_wordmark.py assets/wordmark.svg -->
+
+<table>
+<tr>
+<td valign="top"><img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg?v=3" width="310" alt="Sawyer McKenney — ASCII portrait" /></td>
+<td valign="top"><img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/wordmark.svg?v=3" width="542" alt="SAWYER MCKENNEY — 3D ASCII wordmark" /></td>
+</tr>
+</table>
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Software+Engineer;Full-stack+%C2%B7+Native+iOS+%C2%B7+Cloud+%C2%B7+Applied+ML;Computer+Science+%40+CU+Boulder" alt="Typing SVG" /></a>
 

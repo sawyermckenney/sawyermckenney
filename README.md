@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/main/assets/portrait.svg" alt="ASCII portrait of Sawyer McKenney" width="560" />
+
 ```text
    _____                               
   / ___/____ __      ____  _____  _____

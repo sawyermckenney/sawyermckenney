@@ -104,12 +104,11 @@ interests:  [airline ops, native iOS, cloud infra, applied ML]
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.hackclub.dev/api?username=sawyermckenney&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&include_all_commits=true&count_private=true" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.hackclub.dev/api/top-langs/?username=sawyermckenney&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&langs_count=8&hide=handlebars,html,css" alt="Top languages" />
+<img src="https://raw.githubusercontent.com/sawyermckenney/sawyermckenney/metrics/github-metrics.svg" alt="GitHub metrics" width="100%" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=sawyermckenney&theme=github-dark-blue&hide_border=true&background=0D1117" alt="GitHub streak" />
+<img src="https://streak-stats.demolab.com?user=sawyermckenney&theme=github-dark-blue&hide_border=true&background=0D1117" alt="GitHub streak" />
 
 <br/><br/>
 

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="200" viewBox="0 0 495 200" role="img" aria-label="sawyermckenney's GitHub Stats">
+<style>
+  .t{font:600 18px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#58A6FF}
+  .l{font:400 14px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#C9D1D9}
+  .v{font:700 14px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#C9D1D9}
+  .m{font:400 12px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#8B949E}
+</style>
+<rect x="0.5" y="0.5" width="494" height="199" rx="6" fill="#0D1117" stroke="#30363D"/>
+<text x="25" y="35" class="t">sawyermckenney's GitHub Stats</text>
+<text x="25" y="70" class="l">Total commits</text><text x="470" y="70" class="v" text-anchor="end">228</text>
+<text x="25" y="96" class="l">Pull requests</text><text x="470" y="96" class="v" text-anchor="end">3</text>
+<text x="25" y="122" class="l">Public repos</text><text x="470" y="122" class="v" text-anchor="end">14</text>
+<text x="25" y="148" class="l">Stars earned</text><text x="470" y="148" class="v" text-anchor="end">1</text>
+<text x="25" y="174" class="l">Followers</text><text x="470" y="174" class="v" text-anchor="end">1</text>
+</svg>
